@@ -1,0 +1,153 @@
+// ------------------ MAIN COLOR PALETTE ------------------ //
+
+$color-primary: #536AA6;
+$color-primary-light-1: #697EB4;
+$color-primary-light-2: #8192C0;
+$color-primary-light-3: #99A7CC;
+$color-primary-light-4: #B0BBD7;
+$color-primary-dark-1: #475B8E;
+$color-primary-dark-2: #3B4B77;
+$color-primary-dark-3: #2F3C5F;
+$color-primary-dark-4: #232D47;
+$color-primary-dark-5: #171E2F;
+
+$color-secondary: #E613B5;
+$color-secondary-light-1: #ED30C1;
+$color-secondary-light-2: #F050CB;
+$color-secondary-light-3: #F371D5;
+$color-secondary-light-4: #F592DF;
+$color-secondary-dark-1: #C5109B;
+$color-secondary-dark-2: #A40D81;
+$color-secondary-dark-3: #830B67;
+$color-secondary-dark-4: #62084D;
+$color-secondary-dark-5: #410533;
+
+$color-tertiary: #00F5F9;
+$color-tertiary-light-1: #1EFBFF;
+$color-tertiary-light-2: #42FBFF;
+$color-tertiary-light-3: #66FCFF;
+$color-tertiary-light-4: #89FCFF;
+$color-tertiary-dark-1: #00D2D6;
+$color-tertiary-dark-2: #00AFB2;
+$color-tertiary-dark-3: #008C8E;
+$color-tertiary-dark-4: #00696B;
+$color-tertiary-dark-5: #004647;
+
+$color-quaternary: #9547B2;
+$color-quaternary-light-1: #A45EBE;
+$color-quaternary-light-2: #B278C9;
+$color-quaternary-light-3: #C191D3;
+$color-quaternary-light-4: #CFABDD;
+$color-quaternary-dark-1: #7F3D99;
+$color-quaternary-dark-2: #6A327F;
+$color-quaternary-dark-3: #552866;
+$color-quaternary-dark-4: #3F1E4C;
+$color-quaternary-dark-5: #2A1433;
+
+$color-quinary: #2DA8CC;
+$color-quinary-light-1: #47B5D6;
+$color-quinary-light-2: #64C1DC;
+$color-quinary-light-3: #81CDE3;
+$color-quinary-light-4: #9FD8E9;
+$color-quinary-dark-1: #2790AF;
+$color-quinary-dark-2: #207891;
+$color-quinary-dark-3: #1A6074;
+$color-quinary-dark-4: #134857;
+$color-quinary-dark-5: #0D303A;
+
+// --------------------- GREY COLORS --------------------- //
+
+$color-grey: #969696;
+$color-grey-light-1: #C9C9C9;
+$color-grey-light-2: #A1A1A1;
+$color-grey-light-3: #D6D6D6;
+$color-grey-dark-1: #8B8B8B;
+$color-grey-dark-2: #707070;
+
+// --------------------- BASIC COLORS --------------------- //
+
+$color-white: #FFFFFF;
+$color-white-dark-1: #F7F7F7;
+$color-white-dark-2: #F0F0F0;
+$color-white-dark-3: #E2E2E2;
+
+$color-black: #000000;
+
+$color-red: #E23044;
+
+$color-green: #6EC624;
+
+:export {
+  colorPrimary: $color-primary;
+  colorPrimaryLight1: $color-primary-light-1;
+  colorPrimaryLight2: $color-primary-light-2;
+  colorPrimaryLight3: $color-primary-light-3;
+  colorPrimaryLight4: $color-primary-light-4;
+  colorPrimaryDark1: $color-primary-dark-1;
+  colorPrimaryDark2: $color-primary-dark-2;
+  colorPrimaryDark3: $color-primary-dark-3;
+  colorPrimaryDark4: $color-primary-dark-4;
+  colorPrimaryDark5: $color-primary-dark-5;
+  
+  colorSecondary: $color-secondary;
+  colorSecondaryLight1: $color-secondary-light-1;
+  colorSecondaryLight2: $color-secondary-light-2;
+  colorSecondaryLight3: $color-secondary-light-3;
+  colorSecondaryLight4: $color-secondary-light-4;
+  colorSecondaryDark1: $color-secondary-dark-1;
+  colorSecondaryDark2: $color-secondary-dark-2;
+  colorSecondaryDark3: $color-secondary-dark-3;
+  colorSecondaryDark4: $color-secondary-dark-4;
+  colorSecondaryDark5: $color-secondary-dark-5;
+  
+  colorTertiary: $color-tertiary;
+  colorTertiaryLight1: $color-tertiary-light-1;
+  colorTertiaryLight2: $color-tertiary-light-2;
+  colorTertiaryLight3: $color-tertiary-light-3;
+  colorTertiaryLight4: $color-tertiary-light-4;
+  colorTertiaryDark1: $color-tertiary-dark-1;
+  colorTertiaryDark2: $color-tertiary-dark-2;
+  colorTertiaryDark3: $color-tertiary-dark-3;
+  colorTertiaryDark4: $color-tertiary-dark-4;
+  colorTertiaryDark5: $color-tertiary-dark-5;
+  
+  colorQuaternary: $color-quaternary;
+  colorQuaternaryLight1: $color-quaternary-light-1;
+  colorQuaternaryLight2: $color-quaternary-light-2;
+  colorQuaternaryLight3: $color-quaternary-light-3;
+  colorQuaternaryLight4: $color-quaternary-light-4;
+  colorQuaternaryDark1: $color-quaternary-dark-1;
+  colorQuaternaryDark2: $color-quaternary-dark-2;
+  colorQuaternaryDark3: $color-quaternary-dark-3;
+  colorQuaternaryDark4: $color-quaternary-dark-4;
+  colorQuaternaryDark5: $color-quaternary-dark-5;
+  
+  colorQuinary: $color-quinary;
+  colorQuinaryLight1: $color-quinary-light-1;
+  colorQuinaryLight2: $color-quinary-light-2;
+  colorQuinaryLight3: $color-quinary-light-3;
+  colorQuinaryLight4: $color-quinary-light-4;
+  colorQuinaryDark1: $color-quinary-dark-1;
+  colorQuinaryDark2: $color-quinary-dark-2;
+  colorQuinaryDark3: $color-quinary-dark-3;
+  colorQuinaryDark4: $color-quinary-dark-4;
+  colorQuinaryDark5: $color-quinary-dark-5;
+
+  colorGrey: $color-grey;
+  colorGreyLight1: $color-grey-light-1;
+  colorGreyLight2: $color-grey-light-2;
+  colorGreyLight3: $color-grey-light-3;
+  colorGreyDark1: $color-grey-dark-1;
+  colorGreyDark2: $color-grey-dark-2;
+
+  colorWhite: $color-white;
+  colorWhiteDark1: $color-white-dark-1;
+  colorWhiteDark2: $color-white-dark-2;
+  colorWhiteDark3: $color-white-dark-3;
+
+  colorBlack: $color-black;
+
+  colorRed: $color-red;
+
+  colorGreen: $color-green;
+}

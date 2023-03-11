@@ -1,0 +1,3 @@
+@function addOpacity($inputColor, $opacityLevel) {
+  @return rgba($inputColor, $opacityLevel);
+}
