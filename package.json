@@ -6,7 +6,8 @@
     "dev": "next dev",
     "dev:init": "npm run init-db && next dev",
     "build": "next build",
-    "start": "npm run init-db && next start",
+    "start": "next start",
+    "start:init": "npm run init-db && next start",
     "init-db": "tsc database/initializeDatabase.ts --outDir .initDb && node .initDb/initializeDatabase.js",
     "reset-db": "tsc database/resetDatabase.ts --outDir .initDb && node .initDb/resetDatabase.js",
     "lint": "next lint"

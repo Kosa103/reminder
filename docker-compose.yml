@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nextjs-reminder:
+    build:
+      context: .
+      target: base
+    ports:
+      - "3000:3000"
+    volumes:
+      - reminder-db:/app/db
+    environment:
+      - NODE_ENV=production
+
+volumes:
+  reminder-db:
