@@ -1,16 +1,16 @@
 version: '3.8'
 
 services:
-  nextjs-reminder:
+  nextjs-reminder-prod:
     build:
       context: .
-      target: base
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
       - reminder-db:/app/db
     environment:
-      - NODE_ENV=production
+      - APP_ENV=production
 
 volumes:
   reminder-db:

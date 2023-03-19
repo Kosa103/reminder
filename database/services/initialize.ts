@@ -1,10 +1,10 @@
-import getDB from "../config";
-import { Knex } from "knex";
-import { createUsersTableIfNotExists } from "../schemas/users";
-import { createBoardsTableIfNotExists } from "../schemas/boards";
-import { createUserBoardsTableIfNotExists } from "../schemas/userBoards";
-import { createItemsTableIfNotExists } from "../schemas/items";
-import { MESSAGES } from "../constants";
+import getDB from '../config';
+import { Knex } from 'knex';
+import { createUsersTableIfNotExists } from '../schemas/users';
+import { createBoardsTableIfNotExists } from '../schemas/boards';
+import { createUserBoardsTableIfNotExists } from '../schemas/userBoards';
+import { createItemsTableIfNotExists } from '../schemas/items';
+import { MESSAGES } from '../constants';
 
 const initializeDatabase = async (dry: boolean = false): Promise<void> => {
   try {

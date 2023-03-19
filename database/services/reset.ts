@@ -1,10 +1,10 @@
-import getDB from "../config";
-import { Knex } from "knex";
-import { dropUsersTableIfExists } from "../schemas/users";
-import { dropBoardsTableIfExists } from "../schemas/boards";
-import { dropUserBoardsTableIfExists } from "../schemas/userBoards";
-import { dropItemsTableIfExists } from "../schemas/items";
-import { MESSAGES } from "../constants";
+import getDB from '../config';
+import { Knex } from 'knex';
+import { dropUsersTableIfExists } from '../schemas/users';
+import { dropBoardsTableIfExists } from '../schemas/boards';
+import { dropUserBoardsTableIfExists } from '../schemas/userBoards';
+import { dropItemsTableIfExists } from '../schemas/items';
+import { MESSAGES } from '../constants';
 
 const resetDatabase = async (dry: boolean = false) => {
   try {
