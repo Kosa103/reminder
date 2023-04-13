@@ -1,7 +1,7 @@
 import React from 'react';
 import AppContext from './AppContext';
 import { AppState } from '@/common/models';
-import { ReducerAction } from '../utils/models';
+import { ReducerAction } from '../models';
 import reducer from '../reducer/reducer';
 import { INITIAL_STATE } from '../utils/constants';
 

@@ -1,27 +1,28 @@
-import getDB from '../config';
 import { Knex } from 'knex';
+import connectDB from '../config';
+import { MESSAGES } from '../constants';
 import { dropUsersTableIfExists } from '../schemas/users';
 import { dropBoardsTableIfExists } from '../schemas/boards';
 import { dropUserBoardsTableIfExists } from '../schemas/userBoards';
 import { dropItemsTableIfExists } from '../schemas/items';
-import { MESSAGES } from '../constants';
 
 const resetDatabase = async (dry: boolean = false) => {
+  const db: Knex = connectDB();
+
   try {
     console.log(`${MESSAGES.RESET_STARTED} ${dry}`);
 
-    await dropUsersTableIfExists();
-    await dropBoardsTableIfExists();
-    await dropUserBoardsTableIfExists();
-    await dropItemsTableIfExists();
+    await dropUsersTableIfExists(db);
+    await dropBoardsTableIfExists(db);
+    await dropUserBoardsTableIfExists(db);
+    await dropItemsTableIfExists(db);
 
     console.log(MESSAGES.RESET_FINISHED);
   } catch (err) {
     console.log(MESSAGES.RESET_ERROR);
     console.log(err);
   } finally {
-    const db: Knex = getDB();
-    db.destroy()
+    db.destroy();
   }
 };
 

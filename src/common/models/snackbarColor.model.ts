@@ -1,0 +1,1 @@
+export type SnackbarColor = 'default' | 'success' | 'warning' | 'error';

@@ -1,5 +1,8 @@
 version: '3.8'
 
+volumes:
+  reminder-db:
+
 services:
   nextjs-reminder-prod:
     build:
@@ -8,9 +11,8 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - reminder-db:/app/db
+      - reminder-db:/usr/src/app/db
+    env_file:
+      - ./.env
     environment:
       - APP_ENV=production
-
-volumes:
-  reminder-db:

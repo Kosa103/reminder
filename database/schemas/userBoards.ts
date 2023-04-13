@@ -1,10 +1,7 @@
-import { MESSAGES } from '../constants';
 import { Knex } from 'knex';
-import getDB from '../config';
-import { FIELDS, TABLES } from '../constants';
+import { FIELDS, MESSAGES, TABLES } from '../constants';
 
-export const createUserBoardsTableIfNotExists = async (isDry: boolean): Promise<void> => {
-  const db: Knex = getDB();
+export const createUserBoardsTableIfNotExists = async (db: Knex, isDry: boolean): Promise<void> => {
   const exists: boolean = await db.schema.hasTable(TABLES.USER_BOARDS);
 
   if (!isDry && exists) {
@@ -31,8 +28,7 @@ export const createUserBoardsTableIfNotExists = async (isDry: boolean): Promise<
   console.log(`${MESSAGES.CREATED_TABLE} '${TABLES.USER_BOARDS}'`);
 };
 
-export const dropUserBoardsTableIfExists = async (): Promise<void> => {
-  const db: Knex = getDB();
+export const dropUserBoardsTableIfExists = async (db: Knex): Promise<void> => {
   const exists: boolean = await db.schema.hasTable(TABLES.USER_BOARDS);
 
   if (!exists) {

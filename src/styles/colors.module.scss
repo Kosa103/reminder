@@ -57,21 +57,21 @@ $color-quinary-dark-5: #0D303A;
 
 // --------------------- GREY COLORS --------------------- //
 
-$color-grey: #969696;
-$color-grey-light-1: #C9C9C9;
-$color-grey-light-2: #A1A1A1;
-$color-grey-light-3: #D6D6D6;
-$color-grey-dark-1: #8B8B8B;
-$color-grey-dark-2: #707070;
-
-// --------------------- BASIC COLORS --------------------- //
-
 $color-white: #FFFFFF;
-$color-white-dark-1: #F7F7F7;
-$color-white-dark-2: #F0F0F0;
-$color-white-dark-3: #E2E2E2;
+$color-white-dark-1: #F9F9F9;
+
+$color-grey: #9F9F9F;
+$color-grey-light-1: #ACACAC;
+$color-grey-light-2: #CECECE;
+$color-grey-light-3: #E8E8E8;
+$color-grey-dark-1: #707070;
+$color-grey-dark-2: #464646;
+$color-grey-dark-3: #232323;
 
 $color-black: #000000;
+$color-black-light-1: #101010;
+
+// --------------------- BASIC COLORS --------------------- //
 
 $color-red: #E23044;
 
@@ -133,19 +133,19 @@ $color-green: #6EC624;
   colorQuinaryDark4: $color-quinary-dark-4;
   colorQuinaryDark5: $color-quinary-dark-5;
 
+  colorWhite: $color-white;
+  colorWhiteDark1: $color-white-dark-1;
+
   colorGrey: $color-grey;
   colorGreyLight1: $color-grey-light-1;
   colorGreyLight2: $color-grey-light-2;
   colorGreyLight3: $color-grey-light-3;
   colorGreyDark1: $color-grey-dark-1;
   colorGreyDark2: $color-grey-dark-2;
-
-  colorWhite: $color-white;
-  colorWhiteDark1: $color-white-dark-1;
-  colorWhiteDark2: $color-white-dark-2;
-  colorWhiteDark3: $color-white-dark-3;
+  colorGreyDark3: $color-grey-dark-3;
 
   colorBlack: $color-black;
+  colorBlackLight1: $color-black-light-1;
 
   colorRed: $color-red;
 

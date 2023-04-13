@@ -1,5 +1,8 @@
 version: '3.8'
 
+volumes:
+  reminder-db:
+
 services:
   nextjs-reminder-dev:
     build:
@@ -9,9 +12,8 @@ services:
       - "3000:3000"
     volumes:
       - ./src:/usr/src/app/src
-      - reminder-db:/app/db
+      - reminder-db:/usr/src/app/db
+    env_file:
+      - ./.env
     environment:
       - APP_ENV=development
-
-volumes:
-  reminder-db:

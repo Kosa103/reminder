@@ -1,37 +1,20 @@
-import { existsSync, mkdirSync } from 'fs';
 import knex, { Knex } from 'knex';
-import { MESSAGES } from './constants';
-import { SQLITE_3 } from './constants';
+import { MESSAGES, SQLITE_3 } from './constants';
 
-let db: Knex;
+const connectDB = (): Knex => {
+  const DATABASE_PATH: string = process.env.DATABASE_PATH || '';
 
-const getDB = (): Knex => {
-  const DATABASE_PATH = process.env.DATABASE_PATH
-    ? `${process.cwd()}/${process.env.DATABASE_PATH}`
-    : '';
+  const db: Knex = knex({
+    client: SQLITE_3,
+    connection: {
+      filename: DATABASE_PATH,
+    },
+    useNullAsDefault: true,
+  });
 
-  if (!existsSync('./db')) {
-    mkdirSync('./db');
-  }
-
-  if (!db) {
-    try {
-      db = knex({
-        client: SQLITE_3,
-        connection: {
-          filename: DATABASE_PATH,
-        },
-        useNullAsDefault: true,
-      });
-
-      console.log(MESSAGES.CONNECTED);
-    } catch (err) {
-      console.error(MESSAGES.FAILED_TO_CONNECT);
-      console.error(err);
-    }
-  }
+  console.log(MESSAGES.CONNECTED);
 
   return db;
 };
 
-export default getDB;
+export default connectDB;
